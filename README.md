@@ -1,3 +1,8 @@
+He refactorizado los .ts que contenian cosas, debido a que muchos están vacios aún, implementé lo que veia posible de hacer y lo que sabía. 
+ 
+ 
+ 
+ 
  Tipografías
   - Poppins
   - Montserrat
