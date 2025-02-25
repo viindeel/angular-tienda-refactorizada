@@ -1,0 +1,17 @@
+.login-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.login-card .card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn-custom {
+    background-color: #6a11cb;
+    border: none;
+}
+  .btn-custom:hover {
+    background-color: #2575fc;
+}

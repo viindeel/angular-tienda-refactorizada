@@ -1,0 +1,68 @@
+.notification-container {
+  z-index: 123;
+  top: 55px;
+  left: 0;
+  width: 300px;
+  min-width: 450px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 120px;
+
+.text-danger {
+    color: #dc3545;
+}
+
+.d-flex {
+    gap: 10px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6;
+}
+
+.d-flex.flex-column {
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: #6c757d;
+      font-weight: 500;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+}
+
+&.hidden {
+    display: none;
+}
+
+&.show {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+  }
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

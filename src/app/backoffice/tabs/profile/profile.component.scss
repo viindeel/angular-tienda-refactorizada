@@ -1,0 +1,24 @@
+.padre {
+  font-size: small;
+  height: 220px;
+  margin-top: 40px;
+  width: 150px;
+  margin-left: -35px;
+}
+
+.logos {
+  padding-right: 20px;
+}
+i{
+  color: gray;
+}
+
+.logos:hover {
+  cursor: pointer;
+  background-color: lightgray;
+  width: 150px;
+}
+
+.verde{
+  color: green;
+}

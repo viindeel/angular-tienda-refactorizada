@@ -1,0 +1,116 @@
+<div class="container-fluid">
+    <div class="row">
+     <aside class="col-md-3 inbox-sidebar bg-light p-3">
+      <button class="btn btn-primary w-100 mb-3" type="button">Redactar</button>
+      <ul class="list-group">
+       <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active">
+        <i class="bi bi-inbox-fill me-2"></i>
+        Buzón de entrada
+        <span class="badge bg-primary rounded-pill">5</span>
+       </li>
+       <li class="list-group-item list-group-item-action">
+        <i class="bi bi-star me-2"></i> Destacados
+       </li>
+       <li class="list-group-item list-group-item-action">
+        <i class="bi bi-send me-2"></i> Enviados
+       </li>
+       <li class="list-group-item list-group-item-action">
+        <i class="bi bi-pencil-square me-2"></i> Borradores
+       </li>
+       <li class="list-group-item list-group-item-action">
+        <i class="bi bi-trash me-2"></i> Papelera
+       </li>
+      </ul>
+     </aside>
+  
+     <main class="col-md-9 p-3">
+      <div class="inbox-toolbar d-flex justify-content-between align-items-center mb-3">
+       <div class="btn-toolbar" role="toolbar" aria-label="Barra de herramientas de la bandeja de entrada">
+        <button class="btn btn-outline-secondary btn-sm" title="Refrescar" type="button">
+         <i class="bi bi-arrow-clockwise"></i>
+        </button>
+        <button class="btn btn-outline-secondary btn-sm ms-2" title="Archivar" type="button">
+         <i class="bi bi-archive"></i>
+        </button>
+        <button class="btn btn-outline-secondary btn-sm ms-2" title="Eliminar" type="button">
+         <i class="bi bi-trash"></i>
+        </button>
+       </div>
+       <div>
+        <small class="text-muted">1-50 de 200</small>
+       </div>
+       <div class="btn-group" role="group" aria-label="Paginación">
+        <button class="btn btn-outline-secondary btn-sm" title="Anterior" type="button">
+         <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="btn btn-outline-secondary btn-sm" title="Siguiente" type="button">
+         <i class="bi bi-chevron-right"></i>
+        </button>
+       </div>
+      </div>
+  
+      <h4 class="mb-3">Buzón de entrada</h4>
+      <div class="list-group">
+       <a routerLink="/app/inbox" class="list-group-item list-group-item-action message-item">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+         <div class="d-flex align-items-center">
+          <img src="" alt="Remitente" class="rounded-circle me-2" width="40">
+          <h5 class="mb-0 fw-bold">Sergio Fontán</h5>
+         </div>
+         <small class="text-muted">Hace 3 min</small>
+        </div>
+        <p class="mb-1 fw-bold">Asunto: Recordatorio de reunión</p>
+        <small class="text-body-secondary">Recuerda que tenemos una reunión mañana a las 10:00.</small>
+       </a>
+  
+       <a routerLink="/app/inbox" class="list-group-item list-group-item-action message-item">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+         <div class="d-flex align-items-center">
+          <img src="" alt="Remitente" class="rounded-circle me-2" width="40">
+          <h5 class="mb-0 fw-bold">Maluma</h5>
+         </div>
+         <small class="text-muted">Hace 15 min</small>
+        </div>
+        <p class="mb-1 fw-bold">Asunto: Actualización del proyecto</p>
+        <small class="text-body-secondary">Adjunto encontrarás la última actualización del proyecto.</small>
+       </a>
+  
+       <a routerLink="/app/inbox" class="list-group-item list-group-item-action message-item">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+         <div class="d-flex align-items-center">
+          <img src="" alt="Remitente" class="rounded-circle me-2" width="40">
+          <h5 class="mb-0 fw-bold">Juan Pérez</h5>
+         </div>
+         <small class="text-muted">Hace 1 hora</small>
+        </div>
+        <p class="mb-1 fw-bold">Asunto: Nueva oportunidad</p>
+        <small class="text-body-secondary">Tenemos una nueva oportunidad que podría interesarte.</small>
+       </a>
+  
+       <a routerLink="/app/inbox" class="list-group-item list-group-item-action message-item">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+         <div class="d-flex align-items-center">
+          <img src="" alt="Remitente" class="rounded-circle me-2" width="40">
+          <h5 class="mb-0 fw-bold">Empresa XYZ</h5>
+         </div>
+         <small class="text-muted">Ayer</small>
+        </div>
+        <p class="mb-1 fw-bold">Asunto: Boletín informativo</p>
+        <small class="text-body-secondary">¡Nuestro boletín mensual ya está disponible!</small>
+       </a>
+  
+       <a routerLink="/app/inbox" class="list-group-item list-group-item-action message-item">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+         <div class="d-flex align-items-center">
+          <img src="" alt="Remitente" class="rounded-circle me-2" width="40">
+          <h5 class="mb-0 fw-bold">Soporte Técnico</h5>
+         </div>
+         <small class="text-muted">Hace 2 días</small>
+        </div>
+        <p class="mb-1 fw-bold">Asunto: Actualización de ticket</p>
+        <small class="text-body-secondary">Tu ticket de soporte ha sido actualizado.</small>
+       </a>
+      </div>
+     </main>
+    </div>
+   </div>
