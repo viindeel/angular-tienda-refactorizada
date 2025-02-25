@@ -4,13 +4,13 @@
     <div class="imagen-perfil position-relative rounded-circle bg-white d-flex align-items-center justify-content-center" (click)="toggleItem('isActiveProfile')">
       <i class="bi bi-person-fill text-black fs-4"></i>
       <span class="rounded-circle border border-2 position-absolute"></span>
-      <app-profile *ngIf="isActiveItems.isActiveProfile"></app-profile>
+      <app-profile *ngIf="isActiveItems['isActiveProfile']"></app-profile>
     </div> <!-- fin-imagen-perfil -->
     
     <div class="position-relative"> <!-- Contenedor de las notificaciones (campana) -->
       <i class="bi bi-bell-fill text-white fs-5" (click)="toggleItem('isActiveNotification')"></i>
       <span class="position-absolute notify rounded-circle small d-flex align-items-center justify-content-center text-white">5</span>
-      <app-tab-notification *ngIf="isActiveItems.isActiveNotification"></app-tab-notification>
+      <app-tab-notification *ngIf="isActiveItems['isActiveNotification']"></app-tab-notification>
     </div> <!-- fin-notificaciones -->
 
     <div> <!-- Contenedor del menú cuadrado -->
@@ -40,5 +40,5 @@
 
 </header>
 
-<app-settings *ngIf="isActiveItems.isActiveSettings"></app-settings>
-<app-grid *ngIf="isActiveItems.isActiveGrid"></app-grid>
+<app-settings *ngIf="isActiveItems['isActiveSettings']"></app-settings>
+<app-grid *ngIf="isActiveItems['isActiveGrid']"></app-grid>

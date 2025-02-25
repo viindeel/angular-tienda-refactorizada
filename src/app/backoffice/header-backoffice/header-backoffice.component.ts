@@ -27,7 +27,8 @@ export class HeaderBackofficeComponent {
   isActiveItems: Record<string, boolean> = {
     isActiveNotification: false,
     isActiveSettings: false,
-    isActiveGrid: false
+    isActiveGrid: false,
+    isActiveProfile: false // Añadido el estado para el perfil
   };
 
   constructor(private readonly sidebarStatusService: SidebarStatusService) {}
@@ -37,9 +38,8 @@ export class HeaderBackofficeComponent {
     this.sidebarStatusService.changeStatus(this.isActive);
   }
 
+  // Método de toggle mejorado para alternar entre true y false
   toggleItem(option: keyof typeof this.isActiveItems): void {
-    Object.keys(this.isActiveItems).forEach(key => {
-      this.isActiveItems[key] = key === option;
-    });
+    this.isActiveItems[option] = !this.isActiveItems[option];
   }
 }
